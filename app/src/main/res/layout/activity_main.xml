@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:id="@+id/message_View"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.60"
+        android:weightSum="1"
+        >
+        <TextView
+            android:id="@+id/blank_Text"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.50"
+            android:text="@string/toggle_text"
+            android:textSize="55dp"
+            android:gravity="center"
+            android:textColor="@color/toggle_text_color"
+            android:textStyle="bold"
+            />
+    <EditText
+        android:id="@+id/user_text"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:background="@color/text_box_color"
+        android:textColor="@color/text_box_shadow"
+       android:layout_marginTop="20dp"
+        android:hint="Enter a message"
+        android:textColorHint="@color/hint_color" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/button_background"
+        android:textColor="@color/button_text"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@+id/button_edit"
+        android:layout_toLeftOf="@+id/button_edit"
+
+    />
+    <Button
+        android:id="@id/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="80dp"
+        android:background="@color/button_background"
+        android:textColor="@color/button_text"
+        android:layout_alignParentRight="true"
+        /></RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
